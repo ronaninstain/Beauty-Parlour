@@ -1,0 +1,642 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Base Css */
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    height: 100%;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    transition: .3s;
+}
+
+.pb-100{
+    padding-bottom: 100px;
+}
+
+.pt-100{
+    padding-top: 100px;
+}
+
+.bg{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+.bg::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: .75;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* Top Area Css */
+
+.navbar-brand{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Top-Area{
+    background-color: #350F37;
+}
+
+
+.navbar-light .navbar-nav .navbar-link{
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar-nav{
+    padding:0;
+}
+
+.navbar-nav ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav ul li a.navbar-link{
+    padding: 20px 15px !important;
+    display: block;
+}
+
+.navbar-nav input{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav input[type=search]{
+    padding: 10px 35px;
+    margin: 10px 0px;
+}
+
+.parent-search{
+    position: relative;
+}
+
+.parent-search i{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.d-flex.navbar-nav ul li a.navbar-link{
+    padding: 20px 30px !important;
+    display: block;
+}
+
+/* Hero Section Css */
+
+.hero-section{
+background-color: rgb(255,221,229);
+justify-content: center;
+align-items: center;  
+}
+.section-title{
+    position: relative;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.section-title h4{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 64px;
+    padding-bottom: 12px;
+}
+.section-title span{
+    font-size: 36;
+    font-weight: 400;
+}
+.section-title p{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 15px;
+}
+.section-title .hero-image{
+    align-items: center;
+    margin: 50px 0px;
+}
+.section-title .bottom-p p{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Button Css */
+
+.box-button{
+    position: relative;
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #E7334C;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #FFFFFF;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+/* Counter Area Css */
+
+.course-fee-colour{
+    background-color: #FBBA06;
+}
+.course-fee{
+    display: flex;
+    color: #0F0F0F;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.course-fee h4 span{
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.course-fee h4{
+    font-weight: 600;
+    font-size: 40px;
+}
+.trainee-colour{
+    background-color: #C02384;
+}
+.trainee{
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+    margin-bottom: 5px;
+}
+.trainee h4 span, .trainee span{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+}
+.trainee h4{
+    font-size: 72px;
+    font-weight: 600;
+}
+.trainee h2{
+    font-weight: 600;
+}
+
+/* Information Area Css */
+
+.information-area {
+    background-color: #FECAD5;
+}
+.white-information {
+    background-color: #FFFFFF;
+    padding: 50px 30px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4%;
+    align-items: center;
+    justify-content: center;
+}
+.white-information h2, .pink-information h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.icon-div {
+    display: flex;
+    align-items: stretch;
+}
+.icon-div i {
+    font-size: 16px;
+    border: 1px solid #CC1A6C;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #CC1A6C;
+}
+.icon {
+    margin-right: 10px;
+}
+.icon-div p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    padding-bottom: 2px;
+    line-height: 24px;
+}
+
+.white-information h5 {font-size: 15px;font-weight: 400; margin-top: 5px;}
+
+.white-information-2 {
+    background-color: #FFFFFF;
+    padding: 50px 25px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    border-bottom: 0%;
+    margin: 0 0px;
+}
+.info-radius{
+    border-radius: 4%;
+}
+.white-information h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 12px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+.additional-4 {
+    display: flex;
+    align-items: center;
+}
+.white-image-div {margin: 5px 10px;padding: 5px 25px;}
+
+.additional-4 p {
+    font-size: 15px;
+    font-weight:inherit;
+    margin-right: 10px;
+    line-height: 20px;
+}
+.pink-information{
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.27);
+    ;
+    justify-content: center;
+    padding: 50px 30px;
+    margin: 0px -40px;
+    padding-left: 100px;
+    padding-bottom: 56px;
+    border-radius: 4%;
+}
+.pink-info-pera h4 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 27px;
+}
+.pink-info-pera p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.pink-information .box-button {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+}
+
+/* Join Us Css */
+
+.join-us-title {text-align: start;margin-bottom: 40px;}
+
+.join-us-title h4 {
+    position: relative;
+    font-size: 38px;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/* Section Line */
+
+.join-us-title h4::before {
+    position: absolute;
+    content: "";
+    background-color: #F39733;
+    width: 250px;
+    height: 3px;
+    z-index: 2;
+    bottom: 0;
+    left: 92%;
+    transform: translate(-50%);
+}
+.join-us-title h4::after {
+    position: absolute;
+    content: "";
+    background-color: #C02485;
+    width: 400px;
+    height: 3px;
+    bottom: 0;
+    left: 59%;
+    transform: translate(-30%);
+}
+
+/* Section Line Css end */
+
+.join-img-div {
+    display: flex;
+    align-items: self-end;
+    margin: 8px 14px;
+}
+
+.join-img-div p {
+    margin: 15px 20px;
+    padding: 0px 5px;
+    font-size: 16px;
+    font-weight: initial;
+    line-height: 25px;
+}
+.join-us-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.join-us-hero img {
+    width: 100%;
+}
+
+.join-us-hero-content {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: #FFFFFF;
+    transform: scale(0) rotate(0);
+    transition: .3s;
+    z-index: 2;
+}
+
+.join-us-hero-content::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    opacity: .75;
+    z-index: -1;
+}
+
+.join-us-hero:hover .join-us-hero-content {
+    transform: scale(1) rotate(360deg);
+}
+.join-us-hero-content h4 {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Review Section Css */
+
+.review-area{
+    background-color: rgba(192, 36, 133, 1);
+}
+.student-review h4 {
+    position: relative;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 38px;
+    margin: 0px 2px;
+    font-weight: 600;
+}
+
+/* Section Line Css */
+
+.student-review h4::before {
+    position: absolute;
+    content: "";
+    background-color: #F39733;
+    z-index: 2;
+    width: 300px;
+    height: 3px;
+    bottom: 0;
+    left: 80%;
+    transform: translate(-50%);
+}
+.student-review h4::after {
+    position: absolute;
+    content: "";
+    background-color: #FFFFFF;
+    bottom: 0;
+    width: 500px;
+    height: 3px;
+    left: 59%;
+    transform: translate(-35%);
+}
+.student-review-content img {
+    margin: 20px 10px;
+    padding: 25px 10px;
+}
+
+/* FAQ Section Css */
+
+.faq-accordion .accordion-button:focus{
+    border: 0;
+    box-shadow: none;
+}
+.faq-accordion .accordion-button{
+    background-color: #FFFFFF;
+    color: rgba(51, 51, 51, 1);
+    border-radius: 0 !important;
+    padding: 10px 15px;
+}
+.faq-accordion .accordion-body{
+    background-color: #FFFFFF;
+    color: rgba(51, 51, 51, 1);
+}
+.faq-title h4 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+
+/* Sign-Up Section Css */
+
+.sign-up{
+    background-color: #FFDDE4;
+    justify-content: center;
+    align-content: center;
+}
+.sign-up-title {
+    text-align: center;
+}
+.sign-up-title h2 {
+    text-transform: capitalize;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+.sign-up-title p {
+    font-size: 15px;
+    font-weight: initial;
+    line-height: 20px;
+}
+.sign-up-form input{
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.sign-up-form span {
+    line-height: 12px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sign-up-form input[type="submit"]{
+    background-color: #E7334C;
+    color: #FFFFFF;
+    border: 0;
+    padding: 10px;
+    font-weight: 600;
+}
+.sign-up-form {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 345px;
+    margin-top: 35px;
+}
+.sign-up p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-weight: inherit;
+}
+.sign-up p a {
+    color: #FF8562;
+}
+
+/* Footer Area Css */
+
+.footer-intro, .footer-information, .footer-about, .footer-contact {
+    margin: 5px 5px;
+    padding: 5px 0;
+}
+.footer-intro h4 {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-top: 30px;
+    padding: 5px 0;
+    font-weight: 700;
+}
+.footer-intro p {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
+}
+.footer-intro a {
+    padding: 12px 22px;
+}
+.footer-intro .box-button {
+    border: 1px solid #9F144E;
+}
+.footer-information h4, .footer-about h4, .footer-contact h4{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 30px;
+    padding: 5px 0;
+    font-weight: 600;
+}
+.footer-information ul, .footer-about ul, .footer-contact ul{
+    list-style: none;
+    padding: 5px 10px;
+    line-height: 32px;
+}
+.footer-info-form input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 0;
+    border: 1px solid #9F144E;
+}
+.footer-information ul li a, .footer-about ul li a {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.footer-information ul p {
+    color: #FFFFFF;
+    margin-top: 0px;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer-info-form input[type="submit"]{
+    background-color: #9F144E;
+    color: #FFFFFF;
+    border: 0;
+    font-weight: 400;
+    padding: 10px;
+}
+.footer-contact ul li ul {
+    display: flex;
+    flex-direction: row;
+}
+.footer-contact ul i {
+    padding: 2px 5px;
+}
+.footer-contact ul li {
+    color: #FFFFFF;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.footer-contact ul li ul li {
+    background-color: #411C3A;
+    padding: 0px 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.footer-contact ul li ul li a {
+    color: #FFFFFF;
+}
